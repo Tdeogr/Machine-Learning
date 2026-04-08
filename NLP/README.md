@@ -1,24 +1,51 @@
-## NLP
+## Procesamiento de Lenguaje Natural (NLP)
 
-En esta sección se abordan técnicas fundamentales de **Procesamiento de Lenguaje Natural (NLP)**, enfocadas en la representación, transformación y análisis de datos textuales utilizando Python.
+Esta sección introduce conceptos esenciales del **Procesamiento de Lenguaje Natural**, centrados en el análisis y transformación de información textual mediante herramientas de Python. El objetivo principal es convertir el lenguaje humano en estructuras que puedan ser interpretadas y analizadas por algoritmos.
 
-El texto, uno de los tipos de datos más comunes en ciencia de datos, se maneja generalmente como cadenas de caracteres (*strings*). A partir de este tipo de datos, se aplican distintas técnicas para extraer información relevante y convertir el lenguaje natural en representaciones que puedan ser procesadas por modelos computacionales.
+El texto constituye una fuente importante de datos no estructurados dentro de la ciencia de datos. Debido a ello, es necesario aplicar técnicas que permitan limpiar, organizar y representar la información contenida en cadenas de caracteres, facilitando su uso en tareas analíticas y predictivas.
 
-Se estudian métodos de representación de texto como:
+---
+
+### 🧩 Representación de texto
+
+Se exploran diferentes métodos para transformar documentos en representaciones matemáticas, entre ellos:
+
 - **LSI (Latent Semantic Indexing)**  
 - **LDA (Latent Dirichlet Allocation)**  
 
-Estos modelos permiten identificar temas latentes dentro de un conjunto de documentos, facilitando el análisis semántico y la organización de grandes volúmenes de texto.
+Estos enfoques permiten descubrir patrones y temas ocultos dentro de colecciones de documentos, ayudando a comprender la estructura semántica del texto y mejorar su organización.
 
-Asimismo, se trabaja con **vectores embebidos (word embeddings)** utilizando **FastText**, los cuales permiten representar palabras en espacios vectoriales continuos, capturando relaciones semánticas y sintácticas. Estos embeddings son utilizados en tareas como la **clasificación de texto** y el **análisis de sentimientos**.
+---
 
-Dentro del preprocesamiento del lenguaje, se abordan técnicas clave como:
+### 🔤 Word Embeddings
 
-- **Stemming (tallado)**: reduce las palabras a su raíz mediante reglas heurísticas.  
-- **Lematización (lemmatization)**: transforma las palabras a su forma canónica o lema, considerando su significado gramatical.  
+También se emplean **embeddings de palabras** mediante el modelo **FastText**, que convierte cada término en un vector numérico dentro de un espacio continuo. Esta representación permite capturar similitudes semánticas y relaciones lingüísticas entre palabras.
 
-Ambas técnicas buscan **normalizar el texto**, permitiendo que diferentes variantes de una palabra sean tratadas como una misma unidad (token), lo que mejora el rendimiento de los modelos.
+Los embeddings resultan útiles en diversas aplicaciones como:
 
-El análisis de sentimientos se presenta como una aplicación práctica relevante, donde se clasifican textos (por ejemplo, reseñas) en categorías como positivo o negativo, utilizando tanto técnicas clásicas como representaciones vectoriales modernas.
+- Clasificación de documentos  
+- Análisis de sentimientos  
+- Agrupamiento de textos  
 
-En conjunto, esta sección proporciona una base sólida en NLP, combinando técnicas de preprocesamiento, modelado semántico y aplicaciones prácticas sobre datos reales.
+---
+
+### ⚙️ Preprocesamiento del texto
+
+Antes del modelado, el texto requiere una etapa de normalización. En este proceso se aplican técnicas como:
+
+- **Stemming**: reducción de palabras a su raíz mediante reglas simples.  
+- **Lematización**: conversión de palabras a su forma base considerando su contexto gramatical.  
+
+Ambos métodos ayudan a reducir la variabilidad lingüística, permitiendo que distintas formas de una misma palabra se traten como un solo token.
+
+---
+
+### 😊 Análisis de sentimientos
+
+Como aplicación práctica, se desarrolla el **análisis de sentimientos**, donde textos como reseñas u opiniones son clasificados según su polaridad (positiva o negativa). Para ello, se utilizan tanto técnicas tradicionales de representación como embeddings modernos.
+
+---
+
+### 🧠 Conclusión
+
+En conjunto, esta sección cubre las etapas principales del flujo de trabajo en NLP: preprocesamiento, representación semántica y aplicación de modelos. Esto permite trabajar de manera efectiva con datos textuales y extraer información valiosa a partir del lenguaje natural.
