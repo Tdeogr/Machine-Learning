@@ -1,13 +1,36 @@
 ## Streamlit
 
-En esta sección se desarrollan aplicaciones interactivas utilizando **Streamlit**, enfocadas en la visualización y simulación de modelos matemáticos y estadísticos. El objetivo es transformar conceptos teóricos en herramientas dinámicas que permitan explorar datos y procesos en tiempo real.
+En este apartado se desarrollan aplicaciones interactivas mediante **Streamlit**, con el propósito de convertir modelos matemáticos y estadísticos en herramientas visuales dinámicas. Estas aplicaciones permiten explorar datos, simular procesos y analizar resultados en tiempo real.
 
-Se implementa un dashboard basado en programación orientada a objetos (OOP) para el análisis de una **cadena de Markov de dos estados (V/C)**, incorporando visualizaciones interactivas mediante **Altair**, lo que permite representar de forma clara la evolución de los estados y sus probabilidades sin depender de librerías como Plotly.
+Se construye un dashboard utilizando programación orientada a objetos (OOP) para estudiar una **cadena de Markov de dos estados (V/C)**. La visualización se realiza con **Altair**, lo que permite representar la evolución de los estados y sus probabilidades de forma clara e interactiva, sin necesidad de emplear librerías como Plotly.
 
-Además, se incluyen aplicaciones que ilustran procesos estocásticos como los **procesos de Poisson homogéneos (PPH)** y **no homogéneos (PPNH)**. Estos modelos permiten simular fenómenos reales donde los eventos ocurren de manera aleatoria en el tiempo, ya sea con una tasa constante o variable. Ejemplos de aplicación incluyen conteo de eventos físicos, tráfico web, llegadas a sistemas de servicio y fenómenos naturales.
+---
 
-La sección también integra elementos de análisis financiero, como la construcción y comparación de portafolios bajo el enfoque de **Markowitz**, incluyendo variantes con matrices de covarianza ajustadas mediante técnicas de limpieza (Random Matrix Theory - RIE). Se exploran comparaciones entre resultados **in-sample** y **out-of-sample**, utilizando múltiples activos financieros.
+### 🔄 Procesos estocásticos interactivos
 
-Adicionalmente, se desarrollan interfaces visuales interactivas que facilitan la exploración de datos y modelos, integrando componentes gráficos y configuraciones personalizadas para mejorar la experiencia del usuario.
+También se implementan aplicaciones para simular procesos aleatorios, incluyendo:
 
-En conjunto, esta sección muestra cómo **Streamlit** puede utilizarse para construir dashboards profesionales que combinan análisis estadístico, simulación y visualización interactiva en un solo entorno.
+- Procesos de Poisson homogéneos (PPH)  
+- Procesos de Poisson no homogéneos (PPNH)  
+
+Estos modelos permiten representar eventos que ocurren de manera aleatoria en el tiempo, ya sea con una tasa constante o variable. Entre sus aplicaciones se encuentran el conteo de eventos físicos, tráfico web, llegadas a sistemas de servicio y fenómenos naturales.
+
+---
+
+### 📈 Análisis financiero interactivo
+
+Se incorporan herramientas para el análisis de portafolios bajo el enfoque de **Markowitz**, incluyendo comparaciones entre distintas configuraciones. También se consideran matrices de covarianza ajustadas mediante técnicas de limpieza basadas en **Random Matrix Theory (RIE)**.
+
+Además, se analizan resultados **in-sample** y **out-of-sample**, utilizando múltiples activos financieros para evaluar el desempeño de los portafolios.
+
+---
+
+### 🖥️ Interfaces interactivas
+
+Las aplicaciones integran controles dinámicos y elementos visuales que permiten al usuario modificar parámetros, ejecutar simulaciones y observar cambios de manera inmediata. Esto mejora la comprensión de los modelos y facilita el análisis exploratorio.
+
+---
+
+### 🧠 Conclusión
+
+En conjunto, esta sección muestra el potencial de **Streamlit** para construir dashboards interactivos que combinan simulación, análisis estadístico y visualización dentro de un mismo entorno, facilitando la exploración de modelos complejos de forma intuitiva.
