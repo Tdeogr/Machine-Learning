@@ -1,26 +1,25 @@
 ## Curso Machine Learning
 
-En esta sección se desarrollan distintos modelos y técnicas fundamentales de **Machine Learning**, combinando teoría con implementaciones prácticas en Python aplicadas a datasets reales.
+Este módulo reúne diferentes algoritmos esenciales de aprendizaje automático, combinando fundamentos teóricos con ejemplos prácticos implementados en Python. El contenido aborda distintos tipos de problemas, incluyendo regresión, clasificación, reducción de dimensionalidad y análisis de series temporales.
 
-Se trabaja con problemas de regresión, clasificación, reducción de dimensionalidad y modelos de series temporales, permitiendo comprender cómo aplicar algoritmos de aprendizaje automático en distintos contextos.
+Se utilizan conjuntos de datos reales para ilustrar la aplicación de los modelos. Por ejemplo, el dataset **50 Startups** se emplea para construir modelos de **regresión lineal simple** y **regresión lineal múltiple**, con el objetivo de estudiar la relación entre variables independientes y una variable continua a predecir.
 
-Se utilizan datasets como **50 Startups**, donde se implementa el modelo de **Regresión Lineal** y **Regresión Lineal Múltiple** para analizar la relación entre variables y predecir resultados continuos.
+También se incluyen técnicas de **clasificación**, particularmente la **regresión logística**, implementada mediante la librería *scikit-learn*. Este enfoque permite trabajar con variables categóricas y desarrollar modelos de decisión basados en probabilidades.
 
-También se abordan modelos de **clasificación**, como la **regresión logística**, utilizando la librería *scikit-learn*, lo que permite resolver problemas de predicción de variables categóricas.
+Dentro del proceso de reducción de dimensionalidad, se analizan métodos ampliamente utilizados como:
 
-En cuanto a la reducción de dimensionalidad, se estudian técnicas como:
+- **PCA (Principal Component Analysis)**, que transforma el conjunto de datos a un nuevo espacio con menor número de variables conservando la mayor parte de la variabilidad.  
+- **LDA (Linear Discriminant Analysis)**, técnica supervisada que busca maximizar la separación entre clases para mejorar la capacidad predictiva del modelo.  
 
-- **PCA (Análisis de Componentes Principales)**, que permite transformar datos de alta dimensión en un espacio más reducido conservando la mayor varianza posible.  
-- **LDA (Análisis Discriminante Lineal)**, una técnica supervisada que busca maximizar la separabilidad entre clases, ayudando a reducir el sobreajuste y mejorar el rendimiento del modelo.  
+Estas herramientas permiten:
 
-Estas técnicas permiten:
-- Analizar la correlación entre variables  
-- Reducir la complejidad de los datos  
-- Visualizar datos de alta dimensión en espacios de menor dimensión  
-- Evaluar el impacto del número de componentes en el rendimiento del modelo  
+- Disminuir la dimensionalidad del dataset  
+- Detectar relaciones entre variables  
+- Facilitar la visualización de datos complejos  
+- Analizar el impacto del número de componentes seleccionados  
 
-Además, se incluyen modelos lineales regularizados como **Ridge** y **Lasso**, que ayudan a prevenir el sobreajuste mediante la penalización de los coeficientes del modelo.
+Asimismo, se estudian modelos lineales con regularización, como **Ridge** y **Lasso**, que incorporan penalizaciones sobre los coeficientes del modelo para reducir el sobreajuste y mejorar la generalización.
 
-Por otro lado, se introduce el uso de redes neuronales recurrentes, específicamente el modelo **LSTM (Long Short-Term Memory)**, aplicado a la predicción de precios de acciones. Este enfoque permite capturar dependencias temporales en datos secuenciales, siendo especialmente útil en series de tiempo financieras.
+Finalmente, se introduce el uso de redes neuronales recurrentes, específicamente arquitecturas **LSTM (Long Short-Term Memory)**, aplicadas a la predicción de series temporales financieras. Este tipo de modelos es capaz de capturar dependencias a largo plazo en datos secuenciales, lo que resulta útil en tareas como la predicción de precios de acciones.
 
-En conjunto, esta sección proporciona una visión integral de técnicas clave de Machine Learning, desde modelos lineales hasta métodos avanzados, aplicados a problemas reales y orientados al análisis y predicción de datos.
+En conjunto, esta sección presenta un recorrido por técnicas fundamentales y avanzadas de machine learning, orientadas a la construcción de modelos predictivos y al análisis de datos en distintos escenarios.
