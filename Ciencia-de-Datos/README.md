@@ -1,51 +1,53 @@
 # Ciencia de Datos
 
-Este repositorio reúne diferentes prácticas, conceptos y aplicaciones relacionadas con el campo de la **Ciencia de Datos**, integrando herramientas de análisis, bases de datos, procesamiento de información y técnicas de aprendizaje a partir de datos reales.
+Este repositorio contiene una colección de ejercicios y ejemplos prácticos enfocados en el análisis de datos, integrando herramientas utilizadas comúnmente en proyectos de ciencia de datos. El material combina manipulación de información, uso de bases de datos y procesamiento de texto, todo implementado en Python.
 
 ---
 
-## 🧭 Descripción general
+## 🎯 Objetivo
 
-El contenido del repositorio está orientado a desarrollar habilidades prácticas en:
+El propósito principal es desarrollar competencias relacionadas con el trabajo práctico sobre datos, incluyendo:
 
-- Manipulación y análisis de datos  
-- Conexión a bases de datos  
-- Procesamiento de información estructurada y no estructurada  
-- Análisis exploratorio de datos  
-- Procesamiento de lenguaje natural (NLP)  
+- Preparación y transformación de datasets  
+- Acceso y consulta de bases de datos  
+- Manejo de datos estructurados y no estructurados  
+- Exploración y análisis inicial de información  
+- Técnicas básicas de procesamiento de texto  
 
-Todo ello utilizando Python como lenguaje principal.
-
----
-
-## 📦 Fuentes de datos
-
-Se trabaja con diferentes conjuntos de datos, como:
-
-- Datos de películas (IMDB)  
-- Datos de texto para análisis de sentimientos  
-
-Estos datasets permiten aplicar técnicas de análisis tanto numérico como textual.
+Estas habilidades son fundamentales dentro del flujo de trabajo típico de un proyecto de ciencia de datos.
 
 ---
 
-## 🗄️ Conexión a bases de datos (MongoDB)
+## 📁 Conjuntos de datos utilizados
 
-Se incluye el uso de **MongoDB** como base de datos NoSQL, utilizando la librería `pymongo` para:
+Para los ejemplos se emplean diferentes tipos de información, tales como:
 
-- Establecer conexión con un clúster  
-- Validar la conexión mediante comandos como `ping`  
-- Preparar el entorno para almacenamiento y consulta de datos  
+- Información cinematográfica proveniente de IMDB  
+- Colecciones de texto utilizadas para análisis de sentimientos  
 
-Esto permite trabajar con datos no estructurados y escalables.
+Estos datos permiten trabajar tanto con variables numéricas como con contenido textual.
 
 ---
 
-## 📊 Análisis de datos con Pandas
+## 🗃️ Uso de MongoDB
 
-Se emplea la librería `pandas` para:
+El repositorio incluye prácticas con **MongoDB**, una base de datos orientada a documentos. A través de la librería `pymongo`, se realizan tareas como:
 
-- Cargar datasets (`.csv`)  
-- Explorar datos con métodos como `.head()`  
-- Limpiar y transformar información  
-- Preparar los datos para análisis posteriores  
+- Conexión a un clúster remoto  
+- Verificación de conexión mediante comandos de prueba  
+- Configuración inicial para almacenamiento de información  
+
+Esto facilita el manejo de datos con estructuras flexibles y escalables.
+
+---
+
+## 📈 Manipulación de datos con Pandas
+
+La librería `pandas` se utiliza para el tratamiento y análisis de datasets, permitiendo:
+
+- Importar archivos en formato `.csv`  
+- Inspeccionar la estructura de los datos  
+- Aplicar procesos de limpieza  
+- Transformar variables para análisis posteriores  
+
+Estas operaciones forman parte de la etapa de preparación de datos dentro de un pipeline de análisis.
