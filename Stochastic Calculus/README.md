@@ -1,105 +1,99 @@
 ## Cálculo Estocástico
 
-En esta sección se presenta una **ruta de aprendizaje** para el estudio del cálculo estocástico, integrando teoría de probabilidad, procesos estocásticos y herramientas matemáticas avanzadas. El contenido está basado en diversos materiales, incluyendo libros y notas especializadas.
+Este apartado presenta una introducción al **cálculo estocástico**, combinando teoría de probabilidad avanzada con el estudio de procesos aleatorios. Se abordan los conceptos fundamentales necesarios para modelar fenómenos dinámicos sujetos a incertidumbre.
 
 ---
 
-### Fundamentos de probabilidad avanzada
+### 🎲 Probabilidad avanzada
 
-Se comienza con conceptos esenciales que permiten construir una base sólida:
+El punto de partida es la formalización de los espacios probabilísticos, definidos como $(\Omega, \mathcal{F}, P)$. En este contexto se revisan conceptos clave como:
 
-- Espacios de probabilidad $(\Omega, \mathcal{F}, P)$  
-- Completitud de un espacio de probabilidad  
-- Conjuntos nulos y su importancia en la teoría de la medida  
+- Espacios de probabilidad completos  
+- Conjuntos de medida cero  
+- Importancia de la completitud en la teoría de la medida  
 
-Un espacio de probabilidad es **completo** si todo subconjunto de un conjunto de probabilidad cero también es medible. Esta propiedad es fundamental para evitar inconsistencias en construcciones probabilísticas más avanzadas.
+Un espacio de probabilidad se considera completo cuando cualquier subconjunto de un evento con probabilidad nula también pertenece a la sigma-álgebra. Esta propiedad resulta esencial para el desarrollo riguroso de procesos estocásticos.
 
 ---
 
-### Variables aleatorias y tiempos de espera
+### ⏱️ Variables exponenciales y tiempos de espera
 
-Se estudian variables aleatorias continuas, en particular:
+Se analizan variables aleatorias continuas, especialmente la **distribución exponencial**, ampliamente utilizada para modelar tiempos entre eventos. Se estudian sus propiedades y el comportamiento de relojes exponenciales independientes.
 
-- Distribución exponencial  
-- Propiedades de los tiempos de espera  
-- Relojes exponenciales independientes  
-
-Si $T_1, \dots, T_n$ son variables aleatorias independientes con distribución exponencial, entonces:
+Si $T_1, \dots, T_n$ son variables independientes con distribución exponencial, entonces:
 
 $$
 T = \min\{T_1, \dots, T_n\}
 $$
 
-representa el primer evento que ocurre en un sistema de múltiples procesos aleatorios.
+representa el instante del primer evento en un sistema con múltiples procesos aleatorios.
 
 ---
 
-### Cadenas de Markov en tiempo continuo
+### 🔄 Cadenas de Markov en tiempo continuo
 
-Se introduce el estudio de procesos estocásticos en tiempo continuo, incluyendo:
+Se introducen procesos de Markov en tiempo continuo, incluyendo:
 
-- Definición de cadenas de Markov en tiempo continuo  
-- Interpretación mediante tiempos de espera  
-- Tiempos medios de paso  
+- Definición formal del proceso  
+- Interpretación mediante tiempos de permanencia  
+- Tiempos medios de transición  
 - Clasificación de estados  
 - Procesos de nacimiento y muerte  
 - Procesos de nacimiento puro  
 
-Además, se analizan las **ecuaciones forward y backward**, fundamentales para describir la evolución temporal de estos procesos.
+También se estudian las ecuaciones **forward** y **backward**, que describen la evolución temporal de las probabilidades del sistema.
 
 ---
 
-### Movimiento Browniano y procesos Gaussianos
+### 🌊 Movimiento Browniano
 
-Se estudia el **movimiento browniano** como uno de los procesos fundamentales del cálculo estocástico:
+El **movimiento browniano** se presenta como uno de los procesos fundamentales del cálculo estocástico. Se revisan sus principales propiedades:
 
-- Definición de movimiento browniano estándar  
-- Incrementos independientes y estacionarios  
+- Incrementos independientes  
+- Incrementos estacionarios  
 - Distribución normal de los incrementos  
 
-Por ejemplo, si $B_t$ es un movimiento browniano, entonces:
+Si $B_t$ representa un movimiento browniano, entonces:
 
 $$
 B_t - B_s \sim \mathcal{N}(0, t - s)
 $$
 
-También se analizan momentos de orden superior y propiedades de procesos gaussianos.
+Además, se analizan propiedades adicionales y su relación con procesos gaussianos.
 
 ---
 
-### Martingalas
+### 🎯 Martingalas
 
-Se introduce el concepto de **martingalas**, clave en teoría de probabilidad moderna:
+Se introduce el concepto de **martingala**, esencial en la teoría moderna de probabilidad. Se estudian:
 
-- Definición de martingala  
+- Definición formal  
 - Propiedades básicas  
-- Interpretación como "juegos justos"  
+- Interpretación como procesos sin tendencia  
 
-Las martingalas son fundamentales en finanzas, teoría de apuestas y modelado estocástico.
-
----
-
-### Integración estocástica
-
-Se construye la integral estocástica de manera rigurosa:
-
-- Definición inicial para procesos simples (funciones escalonadas)  
-- Extensión mediante límite en media cuadrática ($L^2$)  
-- Motivación: superar limitaciones de definiciones clásicas  
-
-Este enfoque permite definir integrales respecto al movimiento browniano, base del cálculo estocástico.
+Las martingalas tienen aplicaciones importantes en finanzas, teoría de juegos y modelado de sistemas aleatorios.
 
 ---
 
-### Aplicaciones y conexión con otras áreas
+### ∫ Integración estocástica
 
-El cálculo estocástico tiene aplicaciones en:
+Se construye la integral estocástica de forma progresiva:
+
+- Definición inicial para procesos simples  
+- Extensión mediante convergencia en $L^2$  
+- Integración respecto al movimiento browniano  
+
+Esta construcción permite desarrollar herramientas fundamentales del cálculo estocástico moderno.
+
+---
+
+### 🌐 Aplicaciones
+
+El cálculo estocástico se aplica en diversas áreas, entre ellas:
 
 - Finanzas cuantitativas  
 - Modelos de difusión  
 - Inteligencia Artificial  
 - Procesos de decisión  
 
-También se estudian ejemplos aplicados como:
-- Procesos de nacimiento y muerte  
-- Modelos dinámicos en sistemas aleatorios  
+También se analizan ejemplos prácticos como procesos de nacimiento y muerte y modelos dinámicos bajo incertidumbre.
