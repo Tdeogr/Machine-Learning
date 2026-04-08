@@ -1,57 +1,55 @@
 ## Series de Tiempo
 
-En esta sección se introduce el análisis de **series de tiempo**, abordando tanto los fundamentos teóricos como su implementación práctica en Python para el modelado y predicción de datos temporales.
+Este apartado introduce el análisis de **series temporales**, combinando conceptos teóricos con su aplicación práctica en Python para estudiar y predecir datos que evolucionan a lo largo del tiempo.
 
 ---
 
-## 🧭 Ruta de aprendizaje
+### ⏳ Concepto de serie temporal
 
-### 1. Introducción a las series de tiempo
+Una serie de tiempo consiste en un conjunto de observaciones registradas de manera secuencial en distintos instantes. Estos registros suelen tomarse en intervalos regulares, como:
 
-Una serie de tiempo es una secuencia de datos u observaciones registradas en distintos momentos del tiempo, generalmente en intervalos regulares. Estos pueden ser:
+- Horas  
+- Días  
+- Semanas  
+- Meses  
+- Trimestres  
+- Años  
 
-- Horarios  
-- Diarios  
-- Semanales  
-- Mensuales  
-- Trimestrales  
-- Anuales  
-
-El objetivo principal es analizar el comportamiento de los datos a lo largo del tiempo para identificar patrones y realizar predicciones.
+El propósito principal es analizar la dinámica temporal de los datos para identificar patrones y generar pronósticos.
 
 ---
 
-### 2. Análisis y visualización
+### 📊 Exploración y visualización
 
-El análisis de series de tiempo utiliza métodos estadísticos para:
+El estudio inicial de una serie temporal incluye técnicas que permiten:
 
-- Identificar tendencias  
-- Detectar estacionalidad  
-- Analizar variabilidad  
-- Extraer patrones relevantes  
+- Detectar tendencias de largo plazo  
+- Identificar patrones estacionales  
+- Analizar fluctuaciones o ruido  
+- Reconocer comportamientos recurrentes  
 
-Las series de tiempo suelen visualizarse mediante **gráficos de líneas**, lo que permite interpretar de forma clara la evolución de los datos.
+Generalmente, estas series se representan mediante **gráficos de líneas**, los cuales facilitan la interpretación de la evolución de los valores en el tiempo.
 
 ---
 
-### 3. Forecasting (Predicción)
+### 🔮 Pronóstico (Forecasting)
 
-La **previsión de series temporales** consiste en utilizar modelos estadísticos para predecir valores futuros basándose en datos históricos.
+El **forecasting** se refiere al uso de modelos estadísticos o computacionales para estimar valores futuros a partir del historial disponible. Este tipo de análisis es ampliamente utilizado en distintos campos, como:
 
-Este proceso es clave en áreas como:
 - Finanzas  
 - Economía  
 - Machine Learning  
-- Sistemas de monitoreo  
+- Monitoreo de sistemas  
 
 ---
 
-### 4. Implementación en Python
+### 🐍 Aplicación con Python
 
-Se utiliza Python para descargar, procesar y modelar datos financieros reales.
+Para trabajar con datos reales, se emplea Python como herramienta principal para descargar, procesar y modelar series temporales.
 
-#### 📥 Descarga de datos
-Se emplea la librería `yfinance` para obtener datos históricos del índice S&P 500:
+#### 📥 Obtención de datos
+
+Se utiliza la librería `yfinance` para descargar información histórica del índice S&P 500:
 
 ```python
 import yfinance as yf
