@@ -1,14 +1,12 @@
 ## Estadística Inferencial
 
-En esta sección se abordan conceptos de la **estadística inferencial** mediante un enfoque teórico y práctico utilizando Python.
-
-Se trabaja con modelos probabilísticos, simulaciones y técnicas de estimación.
+En este módulo se introducen herramientas fundamentales de la estadística inferencial mediante ejemplos prácticos implementados en Python. El enfoque combina modelado probabilístico, simulaciones y métodos de estimación para comprender cómo extraer conclusiones a partir de datos muestrales.
 
 ---
 
-### 📌 Modelos de distribución
+### 🔎 Distribuciones probabilísticas
 
-Se analiza una muestra aleatoria $X_1, \dots, X_n$ cuya función de densidad está dada por:
+Se estudia una muestra aleatoria $X_1, \dots, X_n$ cuya función de densidad depende del parámetro $\theta$:
 
 $$
 f_X(x;\theta)=
@@ -18,43 +16,46 @@ f_X(x;\theta)=
 \end{cases}
 $$
 
-Asimismo, se explora la **distribución Beta**, utilizando herramientas como `NumPy`, `Matplotlib` y `SciPy` para:
-- Generar muestras aleatorias  
-- Visualizar funciones de densidad  
-- Analizar el comportamiento de la distribución  
+Además, se analiza la **distribución Beta**, empleando librerías como `NumPy`, `SciPy` y `Matplotlib` para:
+
+- Simular observaciones aleatorias  
+- Representar funciones de densidad  
+- Examinar el efecto de los parámetros en la forma de la distribución  
 
 ---
 
-### 📊 Simulación de distribuciones
+### 🎲 Experimentos de simulación
 
-Se realizan simulaciones con distintas distribuciones pertenecientes a la familia exponencial, tales como:
-- Distribución t de Student  
-- Distribución Beta  
-- Distribución Lognormal  
-- Distribución Gamma  
-- Distribución Poisson  
-- Distribución Exponencial  
+Se realizan simulaciones con distintas distribuciones de probabilidad, entre ellas:
 
-A través de estas simulaciones, se estudia el comportamiento de los datos y la evolución de la **media muestral**, mostrando empíricamente la convergencia hacia la media teórica (Ley de los Grandes Números).
+- t de Student  
+- Beta  
+- Lognormal  
+- Gamma  
+- Poisson  
+- Exponencial  
+
+Estas simulaciones permiten observar el comportamiento de las muestras y analizar la evolución de la **media muestral**, evidenciando la convergencia hacia el valor esperado teórico, en concordancia con la Ley de los Grandes Números.
 
 ---
 
-### 📈 Visualización y análisis
+### 📉 Representación gráfica
 
-Mediante gráficos generados con **Matplotlib**, se representan:
+Mediante el uso de **Matplotlib**, se generan visualizaciones que incluyen:
+
 - Datos simulados  
-- Trayectorias de la media muestral  
-- Comparación con la media teórica  
+- Trayectorias de la media acumulada  
+- Comparaciones entre media empírica y media teórica  
 
-Esto permite una comprensión visual del comportamiento estadístico de las muestras.
+Estas representaciones facilitan la interpretación del comportamiento estadístico de los datos.
 
 ---
 
-### 📐 Estimación por Máxima Verosimilitud (MLE)
+### 📏 Estimación por Máxima Verosimilitud
 
-Se estudia el método de **Máxima Verosimilitud** para la estimación de parámetros.
+Se introduce el método de **Máxima Verosimilitud (MLE)** para estimar parámetros desconocidos.
 
-Dada una variable aleatoria discreta $X$ con distribución:
+Sea la variable aleatoria discreta $X$ con la siguiente distribución:
 
 $$
 \begin{align*}
@@ -65,29 +66,28 @@ P(X=3)&=\frac{1}{3}(1-\theta)
 \end{align*}
 $$
 
-y una muestra observada:
+y la muestra observada:
 
 $$
 (3, 0, 2, 1, 3, 2, 1, 0, 2, 1)
 $$
 
-Se construye la función de verosimilitud:
+La función de verosimilitud queda expresada como:
 
 $$
 L(\theta) = \frac{32}{243}\theta^{5}(1-\theta)^{5}
 $$
 
-A partir de la log-verosimilitud:
+Tomando logaritmos se obtiene:
 
 $$
 \log L(\theta) = \log(32/243) + 5\log(\theta) + 5\log(1-\theta)
 $$
 
-Se obtiene el estimador:
+Al derivar y maximizar la expresión anterior, se obtiene el estimador:
 
 $$
 \hat{\theta} = 0.5
 $$
 
-Verificando que corresponde a un máximo mediante la segunda derivada.
-
+El resultado corresponde a un máximo, lo cual se verifica evaluando la segunda derivada de la log-verosimilitud.
