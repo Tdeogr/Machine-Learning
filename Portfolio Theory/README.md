@@ -1,15 +1,39 @@
-## Portfolio Theory
+## Teoría de Portafolios
 
-En esta sección se abordan los fundamentos de la **teoría de portafolios**, combinando conceptos financieros con herramientas cuantitativas para el análisis, optimización y gestión de inversiones.
+En este apartado se presentan los principios básicos de la **teoría moderna de portafolios**, integrando conceptos financieros con métodos cuantitativos para evaluar y optimizar decisiones de inversión.
 
-Se estudia el comportamiento de los activos financieros a través del análisis de **rendimientos**, así como métricas de riesgo como el **Value at Risk (VaR)** y el **Conditional Value at Risk (CVaR)**, las cuales permiten cuantificar posibles pérdidas en escenarios adversos.
+El análisis comienza con el estudio de los **rendimientos de activos**, junto con medidas de riesgo utilizadas para evaluar posibles pérdidas. Entre estas métricas destacan el **Value at Risk (VaR)** y el **Conditional Value at Risk (CVaR)**, que permiten estimar el impacto de escenarios desfavorables dentro de un horizonte determinado.
 
-Asimismo, se desarrolla el modelo clásico de **Markowitz**, explorando la construcción de portafolios eficientes mediante la **frontera eficiente**, donde se busca maximizar el rendimiento esperado para un nivel dado de riesgo. Este enfoque permite comprender el balance entre riesgo y retorno en la toma de decisiones de inversión.
+---
 
-También se analizan los **límites de la diversificación**, evaluando hasta qué punto la combinación de activos puede reducir el riesgo total de un portafolio.
+### 📊 Modelo de Markowitz
 
-En cuanto a estrategias de inversión, se introduce el modelo **CPPI (Constant Proportion Portfolio Insurance)**, el cual permite proteger el capital mediante una asignación dinámica entre activos riesgosos y seguros.
+Se desarrolla el enfoque clásico propuesto por Markowitz, basado en la construcción de combinaciones eficientes de activos. A través de la **frontera eficiente**, se identifican portafolios que ofrecen el mayor rendimiento esperado para cada nivel de riesgo.
 
-Finalmente, se aborda la **gestión de activos y pasivos (Asset-Liability Management)**, enfocándose en cómo alinear inversiones con obligaciones futuras, un aspecto clave en instituciones financieras y fondos de inversión.
+Este análisis permite comprender la relación entre riesgo y retorno, así como el proceso de selección óptima de inversiones.
 
-La sección incluye tanto contenido teórico como laboratorios prácticos, donde se aplican estos conceptos mediante simulaciones y análisis cuantitativo, proporcionando una visión integral de la gestión moderna de portafolios.
+---
+
+### 🔄 Diversificación
+
+Se examina el efecto de la diversificación en la reducción del riesgo total del portafolio. Además, se estudian sus limitaciones, mostrando que no siempre es posible eliminar completamente la volatilidad mediante la combinación de activos.
+
+---
+
+### 🛡️ Estrategia CPPI
+
+Se introduce el modelo **CPPI (Constant Proportion Portfolio Insurance)**, una estrategia dinámica que ajusta la exposición entre activos riesgosos y conservadores con el objetivo de proteger un nivel mínimo de capital.
+
+Este enfoque resulta útil para inversionistas que buscan crecimiento sin comprometer completamente la seguridad de sus recursos.
+
+---
+
+### ⚖️ Asset-Liability Management
+
+También se aborda la **gestión de activos y pasivos**, donde se analizan estrategias para alinear las inversiones con obligaciones financieras futuras. Este tipo de análisis es particularmente relevante para instituciones como fondos de pensiones, aseguradoras y entidades financieras.
+
+---
+
+### 🧠 Enfoque práctico
+
+La sección combina fundamentos teóricos con ejercicios aplicados, incluyendo simulaciones y análisis cuantitativos. Esto permite comprender cómo implementar técnicas modernas de optimización y gestión de portafolios en escenarios reales.
