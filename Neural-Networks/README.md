@@ -1,27 +1,66 @@
-## Neural Networks
+## Redes Neuronales
 
-En esta sección se introduce el uso de **redes neuronales artificiales** para tareas de clasificación, utilizando Python y la librería *scikit-learn*.
+Esta sección aborda la aplicación de **redes neuronales artificiales** en problemas de clasificación, utilizando Python junto con la librería *scikit-learn*. El objetivo es comprender cómo estos modelos aprenden patrones complejos a partir de los datos.
 
-Se trabaja con datos simulados generados mediante técnicas de *clustering*, lo que permite visualizar de forma intuitiva cómo los modelos aprenden a separar distintas clases. Estos datos son representados gráficamente para entender la distribución y la complejidad del problema.
+Para facilitar el análisis, se emplean conjuntos de datos simulados generados mediante técnicas de *clustering*. Estos datos permiten observar gráficamente la separación entre clases y entender el nivel de dificultad del problema antes del entrenamiento del modelo.
 
-Se implementa un **clasificador basado en redes neuronales (MLPClassifier)**, explorando diferentes arquitecturas mediante la variación del número de capas ocultas y neuronas. Esto permite analizar cómo la complejidad del modelo influye en su capacidad de aprendizaje y generalización.
+---
 
-Las redes neuronales utilizadas en esta sección se basan en el concepto de capas interconectadas de neuronas artificiales, donde cada capa transforma la información de entrada hasta generar una predicción final.
+### 🧠 Modelo MLPClassifier
 
-Un componente clave en el entrenamiento de estos modelos es la **función de pérdida**, la cual mide qué tan bien las predicciones del modelo se ajustan a los valores reales. En este contexto, se emplea la **entropía cruzada**, ampliamente utilizada en problemas de clasificación, ya que permite cuantificar la diferencia entre las probabilidades predichas y las etiquetas reales.
+Se implementa un clasificador basado en perceptrones multicapa (**MLPClassifier**), experimentando con diferentes configuraciones de la red. Se modifican aspectos como:
 
-Además, se analiza el impacto de parámetros importantes como:
-- **Tasa de aprendizaje (learning rate)**, que controla la velocidad con la que el modelo ajusta sus pesos  
+- Número de capas ocultas  
+- Cantidad de neuronas por capa  
+- Profundidad del modelo  
+
+Estas variaciones permiten analizar cómo la arquitectura influye en la capacidad de aprendizaje y en la generalización del modelo.
+
+Las redes neuronales utilizadas funcionan mediante capas de neuronas artificiales conectadas entre sí, donde cada capa transforma la información hasta producir una predicción final.
+
+---
+
+### 📉 Función de pérdida
+
+Durante el entrenamiento se utiliza la **entropía cruzada** como función de pérdida, la cual evalúa la diferencia entre las probabilidades predichas por el modelo y las etiquetas reales. Este criterio es ampliamente empleado en tareas de clasificación supervisada.
+
+---
+
+### ⚙️ Hiperparámetros relevantes
+
+Se estudia el impacto de distintos parámetros que afectan el desempeño del modelo, entre ellos:
+
+- **Learning rate**: controla la magnitud de los ajustes en los pesos  
 - Número de iteraciones (*epochs*)  
-- Tamaño y profundidad de la red  
+- Tamaño de la red neuronal  
+- Profundidad del modelo  
 
-También se incorporan técnicas de validación y búsqueda de hiperparámetros, como:
+La correcta elección de estos valores resulta clave para lograr un buen rendimiento.
+
+---
+
+### 🔍 Optimización del modelo
+
+Para encontrar configuraciones adecuadas, se aplican técnicas de búsqueda y validación como:
+
 - **Grid Search**  
 - **Randomized Search**  
 - Validación cruzada (*K-Fold*)  
 
-Estas técnicas permiten encontrar configuraciones óptimas del modelo y mejorar su rendimiento.
+Estos métodos permiten evaluar múltiples combinaciones de hiperparámetros y seleccionar aquellas que mejor generalizan.
 
-La visualización de los datos y resultados se realiza con herramientas como **Matplotlib** y **Seaborn**, facilitando la interpretación del comportamiento del modelo.
+---
 
-En conjunto, esta sección proporciona una base sólida en el uso de redes neuronales para clasificación, destacando la importancia de la arquitectura, los hiperparámetros y la evaluación del modelo en problemas de aprendizaje supervisado.
+### 📊 Visualización
+
+La interpretación de los resultados se apoya en gráficos generados con **Matplotlib** y **Seaborn**, los cuales permiten observar:
+
+- Distribución de los datos  
+- Fronteras de decisión  
+- Desempeño del modelo  
+
+---
+
+### 🧩 Conclusión
+
+En conjunto, esta sección introduce los fundamentos del uso de redes neuronales para clasificación, destacando la importancia de la arquitectura del modelo, la selección de hiperparámetros y la evaluación adecuada para obtener resultados confiables.
