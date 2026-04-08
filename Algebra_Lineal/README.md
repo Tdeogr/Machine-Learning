@@ -1,22 +1,23 @@
 ## Álgebra Lineal
 
-En esta sección se introduce al uso de Python como herramienta para el análisis matemático, comenzando con una breve revisión de los tipos de datos básicos como **listas, enteros y cadenas de texto (strings)**.
+Este módulo utiliza Python como punto de partida para explorar conceptos fundamentales del álgebra lineal aplicados al análisis de datos. Inicialmente se presentan estructuras básicas del lenguaje, incluyendo tipos de datos como números enteros, listas y cadenas de texto, que servirán como base para los ejemplos posteriores.
 
-Posteriormente, se aborda de manera teórica y práctica el tema de los vectores mediante el uso de librerías como **NumPy** y **Matplotlib**.
+Posteriormente se introducen los vectores y sus operaciones principales utilizando librerías científicas como **NumPy** para el cálculo numérico y **Matplotlib** para la visualización gráfica.
 
-Se desarrollan los siguientes conceptos:
-- Vectores en 2D y 3D  
-- Norma de un vector  
-- Suma de vectores  
-- Multiplicación por un escalar  
-- Vector cero y vector unitario  
-- Normalización de vectores  
-- Producto punto  
-- Cálculo del ángulo entre dos vectores  
-- Proyección de un vector sobre un eje  
+Entre los temas desarrollados se encuentran:
 
-A través de **Matplotlib**, se generan representaciones gráficas que permiten visualizar los vectores y comprender mejor su comportamiento en el espacio.
+- Representación de vectores en dos y tres dimensiones  
+- Magnitud o norma vectorial  
+- Operaciones de suma entre vectores  
+- Multiplicación por escalares  
+- Vector nulo y vectores unitarios  
+- Proceso de normalización  
+- Producto punto o producto escalar  
+- Determinación del ángulo entre vectores  
+- Proyección vectorial sobre una dirección  
 
-Además, se introduce la librería **SymPy**, una herramienta de Python para el cálculo simbólico que permite trabajar con expresiones algebraicas de forma exacta (sin aproximaciones numéricas), facilitando la resolución de ecuaciones, derivadas y manipulaciones matemáticas.
+La utilización de **Matplotlib** permite graficar los vectores y observar de manera visual su comportamiento geométrico, facilitando la comprensión intuitiva de cada operación.
 
-Finalmente, se revisa el concepto de **subespacios fundamentales**, proporcionando una base teórica importante para el entendimiento del álgebra lineal y sus aplicaciones.
+También se incorpora la librería **SymPy**, orientada al cálculo simbólico. Esta herramienta permite manipular expresiones algebraicas de forma exacta, resolver ecuaciones y realizar derivaciones sin recurrir a aproximaciones numéricas.
+
+Para cerrar la sección, se introduce el concepto de **subespacios fundamentales**, proporcionando el marco teórico necesario para comprender aplicaciones más avanzadas del álgebra lineal en machine learning y ciencia de datos.
